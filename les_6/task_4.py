@@ -30,7 +30,7 @@ class Car:
 
 
 class TownCar(Car):
-    def speed_limit(self):
+    def show_speed(self):
         max_speed = 60
         if self.speed > max_speed:
             print(f'Ваша скорость {self.speed}. Сбросьте скорость до 60 км/ч.')
@@ -44,7 +44,7 @@ class SportCar(Car):
 
 
 class WorkCar(Car):
-    def speed_limit(self):
+    def show_speed(self):
         max_speed = 40
         if self.speed > max_speed:
             print(f'Ваша скорость {self.speed}. Сбросьте скорость до 40 км/ч.')
@@ -64,7 +64,7 @@ car.turn()
 car.turn()
 
 bus = TownCar()
-bus.speed_limit()
+bus.show_speed()
 print(f'Цвет автобуса {bus.color}')
 
 sport = SportCar()
